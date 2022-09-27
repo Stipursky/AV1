@@ -1,0 +1,7 @@
+peso = float(input("Insira o peso pescado: "))
+
+if peso > 50:
+    multa = (peso - 50) * 4
+    print(f"\n O peso pescado foi acima do limite, e a multa a ser paga é de:{multa:.2f}R$.")
+else:
+    print("\n O peso pescado está dentro do limite estabelecido.")
