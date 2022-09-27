@@ -1,0 +1,14 @@
+ganho = float(input("Insira quanto ganha por hora: "))
+tempo = int(input("Insira quantas horas de trabalho por mês: "))
+
+bruto = (ganho * tempo)
+IR = (bruto / 100) * 11
+INSS = (bruto / 100) * 8
+sindicato = (bruto / 100) * 5
+liquido = (bruto - IR - INSS - sindicato)
+
+print(f"\n + Salário Bruto: {bruto:.2f}R$ 
+        \n- IR (11%): {IR:.2f}R$ 
+        \n- INSS (8%): {INSS:.2f}R$ 
+        \n- Sindicato (5%): {sindicato:.2f}R$ 
+        \n= Salário Liquido: {liquido:.2f}R$")
